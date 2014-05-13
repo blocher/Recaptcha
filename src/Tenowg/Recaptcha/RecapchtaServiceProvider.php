@@ -1,8 +1,8 @@
-<?php namespace Tenowg\Recapchta;
+<?php namespace Tenowg\Recaptcha;
 
 use Illuminate\Support\ServiceProvider;
 
-class RecapchtaServiceProvider extends ServiceProvider {
+class RecaptchaServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -18,7 +18,7 @@ class RecapchtaServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('tenowg/recapchta');
+		$this->package('tenowg/recaptcha');
 	}
 
 	/**
