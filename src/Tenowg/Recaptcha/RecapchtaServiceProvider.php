@@ -18,7 +18,7 @@ class RecaptchaServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('tenowg/recaptcha');
+		$this->package('tenowg/recaptcha', 'Recaptcha');
 	}
 
 	/**
