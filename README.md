@@ -44,7 +44,7 @@ Controller filter in `__construct()`
 Using the `Validator`
 
     $rules = array(
-        'recaptcha_response_field'] = 'required|recaptcha:' . Input::get('recaptcha_challenge_field')
+        'recaptcha_response_field' => 'required|recaptcha:' . Input::get('recaptcha_challenge_field')
     );
 
 ## TroubleShooting
