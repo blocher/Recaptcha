@@ -29,5 +29,5 @@
             "Tenowg\\Recaptcha\\": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
