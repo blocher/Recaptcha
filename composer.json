@@ -15,7 +15,8 @@
         "classmap": [
             "src/migrations",
             "src/helpers",
-            "src/validators"
+            "src/validators",
+            "src/filters"
         ],
         "psr-0": {
             "Tenowg\\Recaptcha\\": "src/"
