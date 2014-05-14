@@ -13,6 +13,7 @@ class ReCaptchaValidator extends Illuminate\Validation\Validator {
     public function validateRecaptcha($attribute, $value, $parameters)
     {
         echo $attribute . '  ' . $value;
+        var_dump($parameters);
         return false;
     }
 } 
