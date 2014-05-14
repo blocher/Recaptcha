@@ -1,4 +1,5 @@
 <?php
 return array(
-    'publickey'     => 'YourPublicKeyFromGoogleRecaptcha'
+    'publickey'     => 'Your_PUBLIC_Key_From_Google_Recaptcha',
+    'privatekey'    => 'Your_PRIVATE_Key_From_Google_Recaptcha'
 );
