@@ -12,7 +12,7 @@ class ReCaptchaValidator extends Illuminate\Validation\Validator {
 
     public function validateRecaptcha($attribute, $value, $parameters)
     {
-        echo $attribute . '  ' . $value . '  ' . $parameters;
+        echo $attribute . '  ' . $value;
         return false;
     }
 } 
