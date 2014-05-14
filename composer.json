@@ -14,7 +14,8 @@
     "autoload": {
         "classmap": [
             "src/migrations",
-            "src/helpers"
+            "src/helpers",
+            "src/validators"
         ],
         "psr-0": {
             "Tenowg\\Recaptcha\\": "src/"

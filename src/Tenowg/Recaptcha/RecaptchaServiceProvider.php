@@ -19,6 +19,11 @@ class RecaptchaServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->package('tenowg/recaptcha', 'Recaptcha');
+
+        $this->app['validator']->resolver(function($translator, $data, $rules, $messages)
+        {
+            return new \ReCaptchaValidator($translator, $data, $rules, $messages);
+        });
 	}
 
 	/**
