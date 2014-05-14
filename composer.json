@@ -1,6 +1,13 @@
 {
     "name": "tenowg/recaptcha",
-    "description": "",
+    "description": "Laravel 4 reCaptcha Package",
+    "keywords": [
+        "recaptcha",
+        "google",
+        "laravel"
+    ],
+    "homepage": "https://github.com/tenowg/Recaptcha.git",
+    "license": "MIT",
     "authors": [
         {
             "name": "tenowg",
