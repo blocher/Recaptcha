@@ -2,7 +2,7 @@
 
 class RecaptchaFilter {
     protected $rules = array(
-        'recaptcha_response_field'      => 'requried',
+        'recaptcha_response_field'      => 'required',
         'recaptcha_challenge_field'     => 'required'
     );
 
