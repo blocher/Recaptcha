@@ -1,6 +1,6 @@
 <?php
     return array(
         'recaptcha' => array(
-            'failed'    => 'Recaptcha Failed'
+            'recaptcha'    => 'Recaptcha Failed'
         )
     );
