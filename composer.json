@@ -1,6 +1,6 @@
 {
     "name": "tenowg/recaptcha",
-    "description": "Laravel 4 reCaptcha Package (google)",
+    "description": "Laravel 4 reCaptcha Package (Google)",
     "keywords": [
         "recaptcha",
         "google",
