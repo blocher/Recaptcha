@@ -33,7 +33,7 @@ class RecaptchaServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-        Route::filter('foo', 'FooFilter');
+        \Route::filter('foo', 'FooFilter');
 	}
 
 	/**
