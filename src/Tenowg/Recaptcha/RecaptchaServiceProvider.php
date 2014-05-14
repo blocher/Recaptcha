@@ -24,10 +24,6 @@ class RecaptchaServiceProvider extends ServiceProvider {
         {
             return new \ReCaptchaValidator($translator, $data, $rules, $messages);
         });
-
-        $this->app['filter']->extend(function () {
-            return new \RecaptchaFilter();
-        });
 	}
 
 	/**
@@ -37,7 +33,7 @@ class RecaptchaServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+        Route::filter('foo', 'FooFilter');
 	}
 
 	/**
