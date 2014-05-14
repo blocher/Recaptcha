@@ -16,15 +16,11 @@ class ReCaptchaValidator extends Illuminate\Validation\Validator {
         $privateKey = \Config::get('Recaptcha::privatekey');
 
         $response = recaptcha_check_answer($privateKey, Request::getClientIp(), $parameters[0], $value);
-var_dump($parameters);
+
         if (!$response->is_valid) {
             return false;
         } else {
             return true;
         }
-
-        //echo $attribute . ' --- ' . $value . ' --- ' . Request::getClientIp();
-        //var_dump($parameters);
-        //return false;
     }
 } 

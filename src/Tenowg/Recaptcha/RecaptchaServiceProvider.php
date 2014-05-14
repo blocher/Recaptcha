@@ -24,6 +24,10 @@ class RecaptchaServiceProvider extends ServiceProvider {
         {
             return new \ReCaptchaValidator($translator, $data, $rules, $messages);
         });
+
+        $this->app['filter']->extend(function () {
+            return new \RecaptchaFilter();
+        });
 	}
 
 	/**
