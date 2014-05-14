@@ -16,7 +16,7 @@ class ReCaptchaValidator extends Illuminate\Validation\Validator {
         $privateKey = \Config::get('Recaptcha::privatekey');
 
         $response = recaptcha_check_answer($privateKey, Request::getClientIp(), $value, $parameters[0]);
-
+var_dump($response);
         if (!$response->is_valid) {
             return false;
         } else {
