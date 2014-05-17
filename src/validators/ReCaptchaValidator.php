@@ -14,8 +14,9 @@ class ReCaptchaValidator extends Illuminate\Validation\Validator {
     {
         require_once(__DIR__.'/../recaptchalib.php');
         $privateKey = \Config::get('Recaptcha::privatekey');
+        $challenge = Input::get('recaptcha_challenge_field');
 
-        $response = recaptcha_check_answer($privateKey, Request::getClientIp(), $parameters[0], $value);
+        $response = recaptcha_check_answer($privateKey, Request::getClientIp(), $challenge, $value);
 
         if (!$response->is_valid) {
             return false;
