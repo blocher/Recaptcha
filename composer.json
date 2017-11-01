@@ -29,5 +29,11 @@
             "Tenowg\\Recaptcha\\": "src/"
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/blocher/Recaptcha"
+        }
+    ],
     "minimum-stability": "dev"
 }
